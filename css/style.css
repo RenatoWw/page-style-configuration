@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+nav {
+    overflow: hidden;
+}
+
+#title {
+    font-size: 25px;
+    float: left;
+}
+
+#nav-right a {
+    font-weight: bold;
+    color: black;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
