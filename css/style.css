@@ -9,16 +9,13 @@ nav {
     overflow: hidden;
 }
 
-#title {
+#nav-title {
     font-size: 25px;
-    float: left;
+    text-align: center;
 }
 
-#nav-right a {
-    font-weight: bold;
-    color: black;
-    float: right;
+#title {
+    margin-top: 3px;
     text-align: center;
-    text-decoration: none;
-    font-size: 25px;
+    margin-bottom: 6px;
 }
