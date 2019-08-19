@@ -45,10 +45,18 @@ const colorChange = (func, value) => {
         case 'other':
             func('other');
         break;
+
+        case 'hex':
+            func('hex');
+        break;
     }
 }
 
 const backgroundSelectColor = (color) => {
+    if(color == 'hex') {
+        const hex = prompt('Enter here the hex value');
+        document.body.style.backgroundColor = hex;
+    }
     document.body.style.backgroundColor = color;
     if(color == 'other') {
         const other = prompt('Type the color');
@@ -57,6 +65,10 @@ const backgroundSelectColor = (color) => {
 }
 
 const fontSelectColor = (color) => {
+    if(color == 'hex') {
+        const hex = prompt('Enter here the hex value');
+        document.body.style.color = hex;
+    }
     document.body.style.color = color;
     if(color == 'other') {
         const other = prompt('Type the color');
@@ -64,7 +76,6 @@ const fontSelectColor = (color) => {
     }
 }
 
-// TODO: font family, font style
-// TODO: rgb and hex alues
+// TODO: rgb values
 // TODO: create a html element, select it and customize it
 // TODO: image background
