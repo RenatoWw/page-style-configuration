@@ -4,6 +4,7 @@ const fontSize = document.querySelector('#font-size');
 const fontFamily = document.querySelector('#font-family');
 const createElement = document.querySelector('#btnCreateElement');
 const elements = document.querySelector('#elements');
+const frame = document.querySelector('#iframe');
 
 background.onchange = () => backgroundSelectColor(background.value);
 fontColor.onchange = () => fontSelectColor(fontColor.value);
@@ -28,7 +29,7 @@ createElement.onclick = () => {
 // CSS Functions
 
 const backgroundSelectColor = (color) => {
-    document.body.style.backgroundColor = color;
+    frame.style.backgroundColor = color;
     if(color == 'rgb') {
         const rgb = prompt('Enter here the rgb value (255, 0, 0)');
         document.body.style.backgroundColor = `rgb(${rgb})`;
@@ -44,10 +45,10 @@ const backgroundSelectColor = (color) => {
 }
 
 const fontSelectColor = (color) => {
-    document.body.style.color = color;
+    frame.style.color = color;
     if(color == 'rgb') {
         const rgb = prompt('Enter here the rgb value (255, 0, 0)');
-        document.body.style.backgroundColor = `rgb(${rgb})`;
+        document.body.style.color = `rgb(${rgb})`;
     }
     if(color == 'hex') {
         const hex = prompt('Enter here the hex value (#32a852)');
@@ -59,5 +60,5 @@ const fontSelectColor = (color) => {
     }
 }
 
-// TODO: create a html element, select it and customize it
+// TODO: created element: select it and customize it
 // TODO: image background
